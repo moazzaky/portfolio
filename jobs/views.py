@@ -5,4 +5,4 @@ from .models import Job
 
 def home(request):
     jobs_list = Job.objects
-    return  render(request, 'jobs\home.html', {'jobs_list':jobs_list})
+    return  render(request, 'jobs/home.html', {'jobs_list':jobs_list})
